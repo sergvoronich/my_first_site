@@ -203,12 +203,12 @@ p:nth-child(3) {
 }
 
 .order-info-elements.order-info-element-1::before {
-    content: url(img/Group1.png);
+    content: url(img/Group1.svg);
     padding: 100px;
 }
 
 .order-info-elements.order-info-element-2::before {
-    content: url(img/Group2.png);
+    content: url(img/Group2.svg);
     padding: 100px;
 }
 
@@ -218,7 +218,7 @@ p:nth-child(3) {
 }
 
 .order-info-elements.order-info-element-4::before {
-    content: url(img/Group4.png);
+    content: url(img/Group4.svg);
     padding: 100px;
 }
 
