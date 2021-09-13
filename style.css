@@ -1,16 +1,18 @@
 body {
     margin     : 0;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", "Arial", sans-serif;
     color      : #D89999;
     font-weight: normal;
 }
 
 
 header {
+    display         : inline-block;
     background-color: white;
     border-top      : solid 1px;
     border-bottom   : solid 1px;
-    margin          : 26px auto;
+    margin          : 26px 0;
+    width           : 100%;
 }
 
 .navigation {
@@ -114,7 +116,7 @@ a {
 }
 
 h1 {
-    font-family: "Playfair Display", serif;
+    font-family: "Playfair Display", "Times New Roman", serif;
     font-size  : 44px;
     margin     : 0;
 }
@@ -124,7 +126,7 @@ h1 span {
 }
 
 h2 {
-    font-family: "Playfair Display", serif;
+    font-family: "Playfair Display", "Times New Roman", serif;
     text-align : center;
     font-size  : 36px;
 }
@@ -154,15 +156,21 @@ p:nth-child(3) {
     margin    : 0 auto;
 }
 
+.bouquet-examples a {
+    position: absolute;
+    width   : 387px;
+    height  : 442px;
+}
+
 .bouquet-examples div {
-    display: flex;
-    flex-direction: column;
+    display        : flex;
+    flex-direction : column;
     justify-content: center;
-    align-items: center;
-    color        : white;
-    width        : 387px;
-    margin-right : 19px;
-    margin-bottom: 20px;
+    align-items    : center;
+    color          : white;
+    width          : 387px;
+    margin-right   : 19px;
+    margin-bottom  : 20px;
 }
 
 .bouquet-examples h2 {
@@ -175,15 +183,15 @@ p:nth-child(3) {
 
 
 .bouquet-examples div:first-child {
-    background: url(img/Rectangle\ 17.png) round, url(img/wedding-bouquet.jpg) round;
+    background: url(img/Rectangle17.png) round, url(img/wedding-bouquet.jpg) round;
 }
 
 .bouquet-examples div:nth-child(2) {
-    background: url(img/Rectangle\ 17.png) round, url(img/peony.jpg) round;
+    background: url(img/Rectangle17.png) round, url(img/peony.jpg) round;
 }
 
 .bouquet-examples div:last-child {
-    background  : url(img/Rectangle\ 17.png) round, url(img/other-bouquet.jpg) round;
+    background  : url(img/Rectangle17.png) round, url(img/other-bouquet.jpg) round;
     margin-right: 0;
 }
 
@@ -276,7 +284,7 @@ p:nth-child(3) {
     border       : 1px solid;
     width        : 1200px;
     margin       : 0 auto;
-    margin-bottom: -566px;
+    margin-bottom: 80px;
 }
 
 .feedback-container {
@@ -292,26 +300,27 @@ p:nth-child(3) {
 }
 
 .contacts {
+    display         : flex;
+    flex-direction  : column;
     position        : relative;
-    top             : 760px;
-    left            : 500px;
-    z-index         : 100;
+    z-index         : 200;
+    left            : 20%;
     width           : 386px;
     background-color: white;
-    margin          : 0;
-    padding-left    : 35px;
-    padding-bottom  : 65px;
+    margin-bottom   : 150px;
+    margin-top      : 200px;
 }
 
 .contacts h2 {
-    padding-top: 40px;
+    margin      : 60px auto 0 0;
+    padding-left: 35px;
 }
 
 .contacts dd,
 dt {
-    padding     : 15px 0;
-    margin      : 0;
-    padding-left: 35px;
+    margin       : 0;
+    margin-bottom: 20px;
+    padding-left : 35px;
 }
 
 .contacts dd {
@@ -320,6 +329,18 @@ dt {
 
 .contacts dt {
     font-weight: 400;
+}
+
+.map-container {
+    position: relative;
+}
+
+.map {
+    position: absolute;
+    left    : 0;
+    bottom  : 0;
+    width   : 100%;
+    height  : auto;
 }
 
 .discounts {
@@ -348,24 +369,12 @@ dt {
 }
 
 .discounts img {
-height: 100%;
-}
-
-.map {
-    display: flex;
-    width  : 100%;
-    height : auto;
-    margin : 0 auto;
+    height: 100%;
 }
 
 .footer-container {
-    border          : 1px solid;
+    position        : relative;
     background-color: #AE7C78;
-    width           : 100%;
-}
-
-footer {
-    position: relative;
 }
 
 .footer-list {
@@ -394,6 +403,6 @@ footer {
 
 .logo-footer {
     position: absolute;
-    left    : 334px;
-    top     : 30px;
+    left    : 12%;
+    bottom  : 30px;
 }
