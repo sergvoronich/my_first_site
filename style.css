@@ -3,16 +3,15 @@ body {
     font-family: "Montserrat", "Arial", sans-serif;
     color      : #D89999;
     font-weight: normal;
+    min-width: 1200px;
 }
 
 
-header {
-    display         : inline-block;
-    background-color: white;
-    border-top      : solid 1px;
-    border-bottom   : solid 1px;
+.page-header {
+    border-top      : 1px solid #AE7C78;
+    border-bottom   : 1px solid #AE7C78;
     margin          : 26px 0;
-    width           : 100%;
+    
 }
 
 .navigation {
@@ -37,6 +36,12 @@ header {
     justify-content      : center;
     padding              : 60px;
     height               : 456px;
+    margin-left: 20px;
+}
+
+.intro-container {
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .intro .text>p {
@@ -133,10 +138,12 @@ h2 {
 
 .popular-bouquets-container {
     display              : grid;
-    grid-template-columns: 387px 387px;
+    width: 834px;
+    margin: 0 auto;
+    grid-template-columns: 50% 50%;
     gap                  : 60px;
-    justify-content      : center;
     margin-bottom        : 100px;
+    justify-content: space-between;
 }
 
 .popular-bouquets div>p:nth-child(1),
@@ -191,7 +198,7 @@ p:nth-child(3) {
 }
 
 .bouquet-examples div:last-child {
-    background  : url(img/Rectangle17.png) round, url(img/other-bouquet.jpg) round;
+    background: url(img/Rectangle17.png) round, url(img/other-bouquet.jpg) round;
     margin-right: 0;
 }
 
@@ -324,7 +331,7 @@ dt {
 }
 
 .contacts dd {
-    font-weight: 600;
+    font-weight  : 600;
     margin-bottom: 40px;
 }
 
@@ -376,6 +383,7 @@ dt {
 .footer-container {
     position        : relative;
     background-color: #AE7C78;
+    width: 100%;
 }
 
 .footer-list {
